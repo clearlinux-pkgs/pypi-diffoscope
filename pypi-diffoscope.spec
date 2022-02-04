@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x1E953E27D4311E58 (lamby@gnu.org)
 #
 Name     : pypi-diffoscope
-Version  : 202
-Release  : 174
-URL      : https://files.pythonhosted.org/packages/7d/87/76a8d35c4aedea51816327062913ecd01d578bdbf41494ff365af144b329/diffoscope-202.tar.gz
-Source0  : https://files.pythonhosted.org/packages/7d/87/76a8d35c4aedea51816327062913ecd01d578bdbf41494ff365af144b329/diffoscope-202.tar.gz
-Source1  : https://files.pythonhosted.org/packages/7d/87/76a8d35c4aedea51816327062913ecd01d578bdbf41494ff365af144b329/diffoscope-202.tar.gz.asc
+Version  : 203
+Release  : 175
+URL      : https://files.pythonhosted.org/packages/8f/d4/bef49ad4265fb4a6842873bc777bb3fa3741cb35ac94f7bcbf1186c9dcd2/diffoscope-203.tar.gz
+Source0  : https://files.pythonhosted.org/packages/8f/d4/bef49ad4265fb4a6842873bc777bb3fa3741cb35ac94f7bcbf1186c9dcd2/diffoscope-203.tar.gz
+Source1  : https://files.pythonhosted.org/packages/8f/d4/bef49ad4265fb4a6842873bc777bb3fa3741cb35ac94f7bcbf1186c9dcd2/diffoscope-203.tar.gz.asc
 Summary  : in-depth comparison of files, archives, and directories
 Group    : Development/Tools
 License  : GPL-3.0
@@ -68,15 +68,15 @@ python3 components for the pypi-diffoscope package.
 
 
 %prep
-%setup -q -n diffoscope-202
-cd %{_builddir}/diffoscope-202
+%setup -q -n diffoscope-203
+cd %{_builddir}/diffoscope-203
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1643409165
+export SOURCE_DATE_EPOCH=1644005889
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -92,7 +92,7 @@ python3 setup.py build
 export MAKEFLAGS=%{?_smp_mflags}
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/pypi-diffoscope
-cp %{_builddir}/diffoscope-202/COPYING %{buildroot}/usr/share/package-licenses/pypi-diffoscope/8624bcdae55baeef00cd11d5dfcfa60f68710a02
+cp %{_builddir}/diffoscope-203/COPYING %{buildroot}/usr/share/package-licenses/pypi-diffoscope/8624bcdae55baeef00cd11d5dfcfa60f68710a02
 python3 -tt setup.py build  install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
