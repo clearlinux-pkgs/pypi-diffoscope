@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x1E953E27D4311E58 (lamby@gnu.org)
 #
 Name     : pypi-diffoscope
-Version  : 212
-Release  : 186
-URL      : https://files.pythonhosted.org/packages/1f/cf/e98d1a0031fc8d1ee970a150147c2b834297eb521124738844d4d7e9d0c3/diffoscope-212.tar.gz
-Source0  : https://files.pythonhosted.org/packages/1f/cf/e98d1a0031fc8d1ee970a150147c2b834297eb521124738844d4d7e9d0c3/diffoscope-212.tar.gz
-Source1  : https://files.pythonhosted.org/packages/1f/cf/e98d1a0031fc8d1ee970a150147c2b834297eb521124738844d4d7e9d0c3/diffoscope-212.tar.gz.asc
+Version  : 213
+Release  : 187
+URL      : https://files.pythonhosted.org/packages/0f/63/9e720347fce585a9b3f1406d5289de39a97ccf8b18e5ebf0f79379031674/diffoscope-213.tar.gz
+Source0  : https://files.pythonhosted.org/packages/0f/63/9e720347fce585a9b3f1406d5289de39a97ccf8b18e5ebf0f79379031674/diffoscope-213.tar.gz
+Source1  : https://files.pythonhosted.org/packages/0f/63/9e720347fce585a9b3f1406d5289de39a97ccf8b18e5ebf0f79379031674/diffoscope-213.tar.gz.asc
 Summary  : in-depth comparison of files, archives, and directories
 Group    : Development/Tools
 License  : GPL-3.0
@@ -68,10 +68,10 @@ python3 components for the pypi-diffoscope package.
 
 
 %prep
-%setup -q -n diffoscope-212
-cd %{_builddir}/diffoscope-212
+%setup -q -n diffoscope-213
+cd %{_builddir}/diffoscope-213
 pushd ..
-cp -a diffoscope-212 buildavx2
+cp -a diffoscope-213 buildavx2
 popd
 
 %build
@@ -79,7 +79,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1653057735
+export SOURCE_DATE_EPOCH=1653334278
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -104,7 +104,7 @@ popd
 export MAKEFLAGS=%{?_smp_mflags}
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/pypi-diffoscope
-cp %{_builddir}/diffoscope-212/COPYING %{buildroot}/usr/share/package-licenses/pypi-diffoscope/8624bcdae55baeef00cd11d5dfcfa60f68710a02
+cp %{_builddir}/diffoscope-213/COPYING %{buildroot}/usr/share/package-licenses/pypi-diffoscope/8624bcdae55baeef00cd11d5dfcfa60f68710a02
 python3 -tt setup.py build  install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
