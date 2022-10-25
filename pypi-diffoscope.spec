@@ -6,7 +6,7 @@
 #
 Name     : pypi-diffoscope
 Version  : 224
-Release  : 202
+Release  : 203
 URL      : https://files.pythonhosted.org/packages/61/76/bfb524f4752a30051b2a27ae4b7717f1410e09377956c89a101c5813b1c1/diffoscope-224.tar.gz
 Source0  : https://files.pythonhosted.org/packages/61/76/bfb524f4752a30051b2a27ae4b7717f1410e09377956c89a101c5813b1c1/diffoscope-224.tar.gz
 Source1  : https://files.pythonhosted.org/packages/61/76/bfb524f4752a30051b2a27ae4b7717f1410e09377956c89a101c5813b1c1/diffoscope-224.tar.gz.asc
