@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x1E953E27D4311E58 (lamby@gnu.org)
 #
 Name     : pypi-diffoscope
-Version  : 226
-Release  : 204
-URL      : https://files.pythonhosted.org/packages/81/96/de99acd77690c3bc2213ad19de63f33413d5439cd1ef4b6f90111833cba5/diffoscope-226.tar.gz
-Source0  : https://files.pythonhosted.org/packages/81/96/de99acd77690c3bc2213ad19de63f33413d5439cd1ef4b6f90111833cba5/diffoscope-226.tar.gz
-Source1  : https://files.pythonhosted.org/packages/81/96/de99acd77690c3bc2213ad19de63f33413d5439cd1ef4b6f90111833cba5/diffoscope-226.tar.gz.asc
+Version  : 227
+Release  : 205
+URL      : https://files.pythonhosted.org/packages/99/81/7feff6dd079b9515c33fa29c8ab627c43a554c9ab913454861dbdff8d0bc/diffoscope-227.tar.gz
+Source0  : https://files.pythonhosted.org/packages/99/81/7feff6dd079b9515c33fa29c8ab627c43a554c9ab913454861dbdff8d0bc/diffoscope-227.tar.gz
+Source1  : https://files.pythonhosted.org/packages/99/81/7feff6dd079b9515c33fa29c8ab627c43a554c9ab913454861dbdff8d0bc/diffoscope-227.tar.gz.asc
 Summary  : in-depth comparison of files, archives, and directories
 Group    : Development/Tools
 License  : GPL-3.0
@@ -68,10 +68,10 @@ python3 components for the pypi-diffoscope package.
 
 
 %prep
-%setup -q -n diffoscope-226
-cd %{_builddir}/diffoscope-226
+%setup -q -n diffoscope-227
+cd %{_builddir}/diffoscope-227
 pushd ..
-cp -a diffoscope-226 buildavx2
+cp -a diffoscope-227 buildavx2
 popd
 
 %build
@@ -79,7 +79,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1667574639
+export SOURCE_DATE_EPOCH=1668788165
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
