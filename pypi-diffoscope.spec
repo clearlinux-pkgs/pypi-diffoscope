@@ -4,10 +4,10 @@
 # Using build pattern: distutils3
 #
 Name     : pypi-diffoscope
-Version  : 248
-Release  : 227
-URL      : https://files.pythonhosted.org/packages/61/41/49e3e9916b05ef3ab86def24712294a85b20bdc20f6e572587a7853603e9/diffoscope-248.tar.gz
-Source0  : https://files.pythonhosted.org/packages/61/41/49e3e9916b05ef3ab86def24712294a85b20bdc20f6e572587a7853603e9/diffoscope-248.tar.gz
+Version  : 249
+Release  : 228
+URL      : https://files.pythonhosted.org/packages/05/07/4be45313866ff22dbcea60eefedeb16b654205840f911b510e7dbd994828/diffoscope-249.tar.gz
+Source0  : https://files.pythonhosted.org/packages/05/07/4be45313866ff22dbcea60eefedeb16b654205840f911b510e7dbd994828/diffoscope-249.tar.gz
 Summary  : in-depth comparison of files, archives, and directories
 Group    : Development/Tools
 License  : GPL-3.0
@@ -67,10 +67,10 @@ python3 components for the pypi-diffoscope package.
 
 
 %prep
-%setup -q -n diffoscope-248
-cd %{_builddir}/diffoscope-248
+%setup -q -n diffoscope-249
+cd %{_builddir}/diffoscope-249
 pushd ..
-cp -a diffoscope-248 buildavx2
+cp -a diffoscope-249 buildavx2
 popd
 
 %build
@@ -78,7 +78,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1693250937
+export SOURCE_DATE_EPOCH=1693930419
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
