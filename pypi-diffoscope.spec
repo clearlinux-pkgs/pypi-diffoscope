@@ -5,7 +5,7 @@
 #
 Name     : pypi-diffoscope
 Version  : 249
-Release  : 229
+Release  : 230
 URL      : https://files.pythonhosted.org/packages/05/07/4be45313866ff22dbcea60eefedeb16b654205840f911b510e7dbd994828/diffoscope-249.tar.gz
 Source0  : https://files.pythonhosted.org/packages/05/07/4be45313866ff22dbcea60eefedeb16b654205840f911b510e7dbd994828/diffoscope-249.tar.gz
 Summary  : in-depth comparison of files, archives, and directories
