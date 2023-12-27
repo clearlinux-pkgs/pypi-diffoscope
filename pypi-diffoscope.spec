@@ -7,7 +7,7 @@
 #
 Name     : pypi-diffoscope
 Version  : 253
-Release  : 233
+Release  : 234
 URL      : https://files.pythonhosted.org/packages/78/ce/2f96f0e5c9a3dcc1e3181b2cdb196627340f7c1c1ea6170944afbf5a3a8d/diffoscope-253.tar.gz
 Source0  : https://files.pythonhosted.org/packages/78/ce/2f96f0e5c9a3dcc1e3181b2cdb196627340f7c1c1ea6170944afbf5a3a8d/diffoscope-253.tar.gz
 Summary  : in-depth comparison of files, archives, and directories
