@@ -6,13 +6,13 @@
 # autospec commit: f35655a
 #
 Name     : pypi-diffoscope
-Version  : 280
-Release  : 259
-URL      : https://files.pythonhosted.org/packages/2c/66/7ca6d6a2a78ff7c27b640a7a09df7a900116f82ad332da0cfae90f9fa2de/diffoscope-280.tar.gz
-Source0  : https://files.pythonhosted.org/packages/2c/66/7ca6d6a2a78ff7c27b640a7a09df7a900116f82ad332da0cfae90f9fa2de/diffoscope-280.tar.gz
+Version  : 281
+Release  : 260
+URL      : https://files.pythonhosted.org/packages/a7/7f/fb908e880d1c4e7dc3977a66dbc1c5a5bb5a3875795d43e35f47bbc48e63/diffoscope-281.tar.gz
+Source0  : https://files.pythonhosted.org/packages/a7/7f/fb908e880d1c4e7dc3977a66dbc1c5a5bb5a3875795d43e35f47bbc48e63/diffoscope-281.tar.gz
 Summary  : in-depth comparison of files, archives, and directories
 Group    : Development/Tools
-License  : GPL-3.0 MIT
+License  : GPL-3.0
 Requires: pypi-diffoscope-bin = %{version}-%{release}
 Requires: pypi-diffoscope-license = %{version}-%{release}
 Requires: pypi-diffoscope-python = %{version}-%{release}
@@ -69,10 +69,10 @@ python3 components for the pypi-diffoscope package.
 
 
 %prep
-%setup -q -n diffoscope-280
-cd %{_builddir}/diffoscope-280
+%setup -q -n diffoscope-281
+cd %{_builddir}/diffoscope-281
 pushd ..
-cp -a diffoscope-280 buildavx2
+cp -a diffoscope-281 buildavx2
 popd
 
 %build
@@ -80,7 +80,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1728923175
+export SOURCE_DATE_EPOCH=1729531909
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -126,7 +126,6 @@ export MAKEFLAGS=%{?_smp_mflags}
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/pypi-diffoscope
 cp %{_builddir}/diffoscope-%{version}/COPYING %{buildroot}/usr/share/package-licenses/pypi-diffoscope/8624bcdae55baeef00cd11d5dfcfa60f68710a02 || :
-cp %{_builddir}/diffoscope-%{version}/debian/copyright %{buildroot}/usr/share/package-licenses/pypi-diffoscope/c5721cab069b36c92f0cecbcc66f1699790b3fe6 || :
 python3 -m installer --destdir=%{buildroot} dist/*.whl
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
@@ -151,7 +150,6 @@ popd
 %files license
 %defattr(0644,root,root,0755)
 /usr/share/package-licenses/pypi-diffoscope/8624bcdae55baeef00cd11d5dfcfa60f68710a02
-/usr/share/package-licenses/pypi-diffoscope/c5721cab069b36c92f0cecbcc66f1699790b3fe6
 
 %files python
 %defattr(-,root,root,-)
