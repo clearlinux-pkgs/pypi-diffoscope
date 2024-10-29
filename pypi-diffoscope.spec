@@ -7,7 +7,7 @@
 #
 Name     : pypi-diffoscope
 Version  : 282
-Release  : 261
+Release  : 262
 URL      : https://files.pythonhosted.org/packages/50/a2/2c4587936dd94b2dc810d9600e20902dbf6819e94c6978d25cd432d323bd/diffoscope-282.tar.gz
 Source0  : https://files.pythonhosted.org/packages/50/a2/2c4587936dd94b2dc810d9600e20902dbf6819e94c6978d25cd432d323bd/diffoscope-282.tar.gz
 Summary  : in-depth comparison of files, archives, and directories
