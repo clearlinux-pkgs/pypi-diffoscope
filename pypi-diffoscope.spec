@@ -6,10 +6,10 @@
 # autospec commit: 65cf152
 #
 Name     : pypi-diffoscope
-Version  : 297
-Release  : 281
-URL      : https://files.pythonhosted.org/packages/36/d4/fd9ace669685018df7d711f41524e3713ae51065514b2cc3d7bfd55a8dda/diffoscope-297.tar.gz
-Source0  : https://files.pythonhosted.org/packages/36/d4/fd9ace669685018df7d711f41524e3713ae51065514b2cc3d7bfd55a8dda/diffoscope-297.tar.gz
+Version  : 298
+Release  : 282
+URL      : https://files.pythonhosted.org/packages/c0/de/f2db42c95e2606171961c65ff243549ca3d7ac8d733b921e8a393db568da/diffoscope-298.tar.gz
+Source0  : https://files.pythonhosted.org/packages/c0/de/f2db42c95e2606171961c65ff243549ca3d7ac8d733b921e8a393db568da/diffoscope-298.tar.gz
 Summary  : in-depth comparison of files, archives, and directories
 Group    : Development/Tools
 License  : GPL-3.0
@@ -69,10 +69,10 @@ python3 components for the pypi-diffoscope package.
 
 
 %prep
-%setup -q -n diffoscope-297
-cd %{_builddir}/diffoscope-297
+%setup -q -n diffoscope-298
+cd %{_builddir}/diffoscope-298
 pushd ..
-cp -a diffoscope-297 buildavx2
+cp -a diffoscope-298 buildavx2
 popd
 
 %build
@@ -80,7 +80,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1748625252
+export SOURCE_DATE_EPOCH=1750089343
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
